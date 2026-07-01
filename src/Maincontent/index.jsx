@@ -113,7 +113,7 @@ export default function Maincontent(){
                 <p style={{ fontSize: "19px", marginBottom: 0 }}>HTML</p>
                 <img src={htmlLogo} className="mt-1" alt="HTML" width="20" height="20"/>
                 <div>
-                  <p style={{ position: "absolute", left: "350px" }}>80%</p>
+                  <p className="percentage">80%</p>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Maincontent(){
                      <p style={{ fontSize: "19px", marginBottom: 0 }}>CSS</p>
                     <img src={cssLogo} className="mt-1" alt="CSS"  width="20" height="20"/>
                     <div>
-                    <p style={{ position: "absolute", left: "350px" }}>70%</p>
+                    <p className="percentage">70%</p>
                     </div>
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function Maincontent(){
                 <p style={{ fontSize: "19px", marginBottom: 0 }}>JavaScript</p>
                 <img src={jsLogo} className="mt-1" alt="JavaScript" width="20" height="20" />
                 <div>
-                  <p style={{ position: "absolute", left: "350px" }}>65%</p>
+                  <p className="percentage">65%</p>
                 </div>
               </div>
             </div>
@@ -161,7 +161,7 @@ export default function Maincontent(){
                 <p style={{ fontSize: "19px", marginBottom: 0 }}>React</p>
                 <img src={reactLogo} className="mt-1" alt="React" width="20" height="20"/>
                 <div>
-                  <p style={{ position: "absolute", left: "350px" }}>75%</p>
+                  <p className="percentage">75%</p>
                 </div>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function Maincontent(){
                 <p style={{ fontSize: "19px", marginBottom: 0 }}>Bootstrap</p>
                 <img src={bootstrapLogo} className="mt-1" alt="Bootstrap" width="20" height="20"/>
                 <div>
-                  <p style={{ position: "absolute", left: "350px" }}>75%</p>
+                  <p className="percentage">75%</p>
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@ export default function Maincontent(){
           <div className="inner-circle">{skill.percentage}</div>
         </div>
 
-        <h6 className="text-white mt-2">{skill.name}</h6>
+        <h6 className="text-white skilltext mt-2">{skill.name}</h6>
       </div>
     ))}
   </div>
