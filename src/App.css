@@ -1,0 +1,481 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , 'sans-serif';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: #ededed;
+    background-color: black !important;
+}
+section{
+    scroll-margin-top: 100px;
+}
+#about{
+    scroll-margin-top: 120px;
+}
+#contact{
+    scroll-margin-top: 40px;
+}
+header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0.25px 5px rgb(245, 44, 44);
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    position: relative;
+}
+
+.navbar{
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px red;
+    padding: 8px;
+    text-align: center;
+    padding-right: 40px;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.5s ;
+    background-color: #fff;
+}
+.navbar a:hover{
+        color: red;
+        font-weight: 600;
+}
+
+.navbar a:hover::after{
+    transform: scaleX(1);
+}
+.navbar-toggler{
+    border: none !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active{
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+}
+.navbar-toggler-icon:focus{
+    border: none !important;
+    outline: none !important;
+}
+
+.contact{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 0 10px red;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+.contact::after{
+    content: '';
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    left: 14px;
+    bottom: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+.contact:hover::after{
+    transform: scaleX(1)
+}
+.contact:hover{
+    color: red;
+    font-weight: 600;
+}
+.home{
+    position: relative;
+    top: 95px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 10% 0;
+    color: white;
+}
+.home-content{
+    width: 60%;
+}
+.pic1{
+      border-radius: 100%;
+      border: 1px solid red;
+      box-shadow: 0 0 15px red;
+}
+.pic2{
+     border-radius: 10px;
+      border: 1px solid red;
+      box-shadow: 0 0 15px red;
+}
+
+.technical{
+    padding-left: 100px;
+}
+.skilldiv1{
+    margin-top: 10px;
+}
+.progress-bar{
+    border-radius: 10px;
+    border: 2px solid red;
+    width: 400px;
+    height: 10px;
+   overflow: hidden;
+}
+.progress-fill {
+        width: 60%;
+        background-color: red;
+}
+
+
+.about{
+    color: white;
+    margin-top: 150px;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.about2{
+    display: flex;
+    margin-top: 40px;
+    padding-left: 50px;
+}
+.aboutme{
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.aboutme:after{
+    content: '';
+    background-color: red;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    left: 45%;
+    border-radius: 10px;
+    bottom: -8px;
+}
+.abourcontent{
+    width: 50%;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.skills{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.skilldiv1{
+    color: white;
+    width: 100%;
+    max-width: 400px;
+}
+.progress-bar {
+    width: 100%;
+    max-width: 400px;
+}
+.html{
+    display: flex;
+}
+.technical{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.technicalskills{
+    color: white; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+
+.radial-bar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    background: conic-gradient(
+        red 0deg 270deg,
+        black 270deg 360deg
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 23px;
+    font-weight: bold;
+}
+.proffe{
+    width: 100%;
+    margin-top: 10px;
+}
+.professionalskills{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+.professional{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    gap: 30px;
+}
+.innerprofe{
+    flex-basis: 30%;
+    margin: 15px;
+}
+.contactdiv{
+    overflow: hidden;
+    padding: 100px;
+}
+.contactme{
+    display: flex;
+    margin-top: 30px;
+}
+.contact-me{
+    position: relative;
+}
+.contact-me:after{
+    content: '';
+    background-color: red;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    left: 46%;
+    bottom: -4px;
+    border-radius: 10px;
+}
+.contact1{
+    width: 80%;
+    margin-right: 40px;
+}
+.contactform{
+    width: 100%;
+}
+.submitbtn{
+        background-color: red;
+        border-radius: 20px;
+        text-align: center;
+        border: none;
+        box-shadow: 0 0 10px red;
+        color: white;
+        width: 100%;
+        margin: 5px;
+        padding: 2px;
+        font-size: 20px;
+}
+.myskills{
+    position: relative;
+    color: white; 
+    text-align: center;
+}
+.myskills:after{
+    content: '';
+    background-color: red;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    left: 46%;
+    bottom: -4px;
+    border-radius: 10px;
+}
+.footer{
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0.25px 5px rgb(245, 44, 44);
+
+}
+
+
+@media (max-width: 768px) {
+    header{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+
+    .contact{
+        display:none;
+    }
+
+    .navbar{
+        width:100%;
+        margin-top:10px;
+    }
+    .navbar a{
+        margin-right: 30px;
+    }
+
+    .home{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .home-content{
+        width:100%;
+    }
+    .navbar a::after{
+            width: 20%;
+            position: absolute;
+            left: 40%;
+    }
+
+    .pic1{
+        width:200px;
+        height:200px;
+        margin-top:20px;
+    }
+    .about{
+        width: 100%;
+    }
+    .about2{
+        flex-direction: column;
+        margin:2px auto;
+        margin-left: auto;
+    }
+
+    .pic2{
+        width:200px;
+        height:250px;
+        margin-top:20px;
+        margin: 2px auto;
+    }
+    .abourcontent{
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .aboutme:after{
+        left: 40%;
+    }
+    .technicalskills{
+        text-align:center;
+        margin-bottom:50px;
+        padding-left:0;
+        margin-right:0;
+    }
+    .skills{
+        flex-direction: column;
+        align-items:center;
+        overflow: hidden;
+    }
+   
+    .technical{
+        width: 100%;
+        align-items: center;        
+        padding: 20px;    
+    }
+
+    .contactme{
+        flex-direction: column;
+    }
+    .contact1{
+        text-align: center;
+        width: 100%;
+    }
+    .contact-me:after{
+            left: 40%;
+    }
+    .myskills:after{
+        left: 43%;
+
+    }
+   }
+@media (max-width:600px){
+.technicalskills{
+        padding-right: 40px;
+        margin-top: 10px;
+        padding-top: 0;
+    }
+.skills{
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .technical{
+       justify-content: center;
+       padding: 50px;
+    }
+    .proffe{
+        padding: 3px;
+        margin-left: 0;
+    }
+    .professional{
+        padding: 3px;
+        margin-left: 80px;
+    }
+    .innerprofe{
+        margin: 30px;
+    }
+}
