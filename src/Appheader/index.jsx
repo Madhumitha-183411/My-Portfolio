@@ -8,7 +8,7 @@ export default function Appheader(){
       <nav className="navbar navbar-dark navbar-expand-lg">
         <button
           className="navbar-toggler"
-          style={{ margin: "0px auto" }}
+          // style={{ margin: "0px auto" }}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarMenu">
@@ -16,7 +16,7 @@ export default function Appheader(){
         </button>
 
         <div className="collapse navbar-collapse" id="navbarMenu">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link" href="#home">Home</a>
             </li>

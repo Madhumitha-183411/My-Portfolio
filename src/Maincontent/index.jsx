@@ -1,5 +1,6 @@
 import pic1 from "../assets/pic1.jpeg"
 import pic2 from "../assets/pic2.jpeg"
+import pic3 from "../assets/pic3.jpeg"
 import htmlLogo from "../assets/html-5.png";
 import cssLogo from "../assets/css-3.png";
 import jsLogo from "../assets/java-script.png";
@@ -87,7 +88,7 @@ export default function Maincontent(){
       <h1 className="aboutme">About Me</h1>
 
       <div className="about2">
-        <img className="pic2" src={pic2} alt="Madhumitha" width="250" height="300"/>
+        <img className="pic2" src={pic3} alt="Madhumitha" width="250" height="300"/>
 
         <div className="abourcontent">
 
