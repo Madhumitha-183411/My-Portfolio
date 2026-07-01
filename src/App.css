@@ -497,38 +497,18 @@ header{
         width: 100%;
     }
     .contact-me:after{
-            left: 35%;
+            left: 43%;
     }
     .myskills:after{
         left: 43%;
     }
    }
-/* @media (max-width:600px){
-.technicalskills{
-        padding-right: 40px;
-        margin-top: 10px;
-        padding-top: 0;
+   @media (max-width:500px){
+    .contact-me:after{
+            left: 35%;
     }
-.skills{
-        flex-direction: column;
-        width: 100%;
-        overflow: hidden;
-        margin-bottom: 0;
-        margin-top: 0;
+    .myskills:after{
+        left: 37%;
     }
-    .technical{
-       justify-content: center;
-       padding: 50px;
-    }
-    .proffe{
-        padding: 3px;
-        margin-left: 0;
-    }
-    .professional{
-        padding: 3px;
-        margin-left: 80px;
-    }
-    .innerprofe{
-        margin: 30px;
-    }
-} */
+   }
+
