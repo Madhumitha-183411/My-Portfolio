@@ -356,6 +356,72 @@ header{
     left: 350px;
 }
 
+.project-card {
+  position: relative;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.project-image {
+  width: 100%;
+  /* display: block; */
+  transition: transform 0.4s ease;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+}
+
+.project-btn {
+  padding: 10px 20px;
+  background: #ff4d4d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s ;
+  font-weight: bold;
+}
+
+.project-card:hover .overlay {
+  background: rgba(0, 0, 0, 0.6); 
+}
+
+.project-card:hover .project-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.myproject{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.myproject:after{
+    content: '';
+    background-color: red;
+    width: 120px;
+    height: 3px;
+    position: absolute;
+    left: 46%;
+    bottom: -7px;
+   
+}
+
 
 @media (max-width: 768px) {
     header{
@@ -511,6 +577,9 @@ header{
     .myskills:after{
         left: 43%;
     }
+    .myproject:after{
+        left: 43%;
+    }
    }
    @media (max-width:500px){
     .contact-me:after{
@@ -518,6 +587,9 @@ header{
     }
     .myskills:after{
         left: 37%;
+    }
+    .myproject:after{
+        left: 35%;
     }
    }
 
