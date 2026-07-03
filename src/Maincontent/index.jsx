@@ -210,7 +210,7 @@ export default function Maincontent(){
       </div>
          </section>
 
-         <section>
+         <section id="project">
             <h1 className="myproject">My projects</h1>
 
               <div className="project-card">
