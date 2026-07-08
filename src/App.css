@@ -149,8 +149,6 @@ header{
 }
 .pic2{
      border-radius: 10px;
-      /* border: 1px solid red; */
-      /* box-shadow: 0 0 15px red; */
 }
 
 .technical{
@@ -419,8 +417,11 @@ header{
     position: absolute;
     left: 46%;
     bottom: -7px;
-   
 }
+  .project-div{
+        display: flex;
+        justify-content: center;
+    }
 
 
 @media (max-width: 768px) {
@@ -447,6 +448,9 @@ header{
         box-shadow: none;
         margin-left:auto;
         text-align: center;
+    }
+    .project-div{
+        flex-direction: column;
     }
 
 .navbar-nav {

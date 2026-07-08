@@ -2,6 +2,7 @@ import pic1 from "../assets/pic1.jpeg"
 import pic2 from "../assets/pic2.jpeg"
 import pic3 from "../assets/pic3.jpeg"
 import pro1 from "../assets/pro1.png"
+import pro2 from "../assets/electromart.png"
 import htmlLogo from "../assets/html-5.png";
 import cssLogo from "../assets/css-3.png";
 import jsLogo from "../assets/java-script.png";
@@ -212,12 +213,22 @@ export default function Maincontent(){
 
          <section id="project">
             <h1 className="myproject">My projects</h1>
+            <div className="project-div">
 
-              <div className="project-card">
+            
+              <div className="project-card mt-2">
                 <img className="project-image" src={pro1} alt="" width={"300px"} height={"300px"} />
                 <div className="overlay">
                   <a href="https://weatherapp-183411.onslate.in/" target="_blank"  className="project-btn">View project</a>
                 </div>
+              </div>
+
+              <div className="project-card mt-4">
+                <img className="project-image" src={pro2} alt="" width={"300px"} height={"300px"} />
+                <div className="overlay">
+                  <a href="https://electromart-183411.onslate.in/" target="_blank"  className="project-btn">View project</a>
+                </div>
+              </div>
               </div>
          </section>
 
